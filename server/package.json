@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npx prisma generate",
     "start": "tsx server.ts",
     "server": "nodemon --exec tsx server.ts",
     "build": "tsc"
+
   },
   "keywords": [],
   "author": "",
