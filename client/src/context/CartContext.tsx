@@ -3,10 +3,10 @@ import {
     useContext,
     useEffect,
     useState,
-    ReactNode,
   } from "react";
   
   import type { CartItem, Product } from "../types";
+  import type { ReactNode } from "react";
   
   interface CartContextType {
     items: CartItem[];

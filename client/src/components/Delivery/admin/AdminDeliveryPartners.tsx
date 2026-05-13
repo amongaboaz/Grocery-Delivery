@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { PlusIcon, XIcon, TruckIcon, PhoneIcon, MailIcon } from "lucide-react";
-import type { DeliveryPartner } from "../../types";
-import Loading from "../../components/Loading";
-import { dummyDeliveryPartnerData } from "../../assets/assets";
+import { Order } from "../../../types";
+import Loading from "../../Loading";
+import { assets } from "../../../assets/assets";
 
 export default function AdminDeliveryPartners() {
     const [partners, setPartners] = useState<DeliveryPartner[]>([]);
