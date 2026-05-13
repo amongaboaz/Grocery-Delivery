@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BikeIcon } from "lucide-react";
-import { assets } from "../../../assets/assets";
+import { heroSectionData } from "../../../assets/assets";
 
 export default function DeliveryLogin() {
     const [email, setEmail] = useState("");

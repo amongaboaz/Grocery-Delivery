@@ -1,4 +1,4 @@
-import { Loader, Loader2Icon } from "lucide-react"
+import { Loader2Icon } from "lucide-react"
 
 const Loading = () => {
   return (

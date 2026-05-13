@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { TruckIcon } from "lucide-react";
 import toast from "react-hot-toast";
-import { Order } from "../../../types";
+import type { DeliveryPartner } from "../../../types";
 import Loading from "../../Loading";
-import { assets } from "../../../assets/assets";
+import { dummyDashboardOrdersData, dummyDeliveryPartnerData } from "../../../assets/assets";
 
 export default function AdminOrders() {
 

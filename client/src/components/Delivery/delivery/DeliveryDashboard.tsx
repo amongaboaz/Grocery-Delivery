@@ -4,8 +4,8 @@ import OtpModal from "../OtpModal";
 import CancelModal from "../CancelModal";
 import DeliveryOrderCard from "../DeliveryOrderCard";
 import Loading from "../../Loading";
-import { Order } from "../../../types";
-import { assets } from "../../../assets/assets";
+import type { Order } from "../../../types";
+import { dummyDashboardOrdersData } from "../../../assets/assets";
 
 export default function DeliveryDashboard() {
 
