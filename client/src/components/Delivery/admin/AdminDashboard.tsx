@@ -40,7 +40,7 @@ export default function AdminDashboard() {
     return (
         <div className="space-y-6">
             {/* Stat Cards */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {cards.map((card) => (
                     <div key={card.label} className="bg-white rounded-2xl p-5 border border-app-border flex justify-between gap-3">
                         <div>
