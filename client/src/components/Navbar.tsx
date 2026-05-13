@@ -16,14 +16,11 @@ import {
   import { useState } from "react";
   import { Link, useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
+import { useAuth } from "../context/AuthContext";
   
   const Navbar = () => {
-    const user = {
-      name: "John Doe",
-      email: "john@example.com",
-      isAdmin: true,
-    };
-  
+
+    const{user, logout} = useAuth()
     const {cartCount,setIsCartOpen} = useCart()
   
     const [searchQuery, setSearchQuery] = useState("");
@@ -31,7 +28,7 @@ import { useCart } from "../context/CartContext";
   
     const navigate = useNavigate();
   
-    const handleSearch = (e) => {
+    const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
   
       if (!searchQuery.trim()) return;
@@ -40,6 +37,7 @@ import { useCart } from "../context/CartContext";
     };
 
     const handleLogout = () => {
+      logout()
         setUserMenuOpen(false)
         navigate("/");
     }

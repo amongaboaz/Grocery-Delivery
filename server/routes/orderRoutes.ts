@@ -13,14 +13,14 @@ import {
 
 const orderRouter = express.Router();
 
-// User routes
-orderRouter.post("/", auth, createOrder);
-orderRouter.get("/", auth, getUserOrders);
-orderRouter.get("/:id", auth, getOrder);
-orderRouter.get("/:id/location", auth, getOrderLocation);
-
 // Admin routes
 orderRouter.get("/all", auth, admin, getAllOrders);
 orderRouter.put("/:id/status", auth, admin, updateOrderStatus);
+
+// User routes
+orderRouter.post("/", auth, createOrder);
+orderRouter.get("/", auth, getUserOrders);
+orderRouter.get("/:id/location", auth, getOrderLocation);
+orderRouter.get("/:id", auth, getOrder);
 
 export default orderRouter;

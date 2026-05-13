@@ -70,7 +70,7 @@ const CartSidebar = () => {
   ) : (
     items.map((item) => (
       <div
-        key={item.product._id}
+        key={item.product.id}
         className="flex gap-3 bg-app-cream/60 rounded-xl p-3"
       >
         <img
@@ -97,7 +97,7 @@ const CartSidebar = () => {
               <button
                 onClick={() =>
                   updateQuantity(
-                    item.product._id,
+                    item.product.id,
                     item.quantity - 1
                   )
                 }
@@ -113,7 +113,7 @@ const CartSidebar = () => {
               <button
                 onClick={() =>
                   updateQuantity(
-                    item.product._id,
+                    item.product.id,
                     item.quantity + 1
                   )
                 }
@@ -132,7 +132,7 @@ const CartSidebar = () => {
 
               <button
                 onClick={() =>
-                  removeFromCart(item.product._id)
+                  removeFromCart(item.product.id)
                 }
                 className="p-1 text-app-text-light hover:text-app-error transition-colors"
               >
