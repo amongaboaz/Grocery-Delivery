@@ -14,7 +14,7 @@ import { useCart } from "../context/CartContext";
 const Checkout = () => {
 
     const navigate = useNavigate()
-    const currency = import.meta.env.VITE_CURRENCY_SYMBOL || 'Ksh';
+    const currency = import.meta.env.VITE_CURRENCY_SYMBOL || 'usd';
 
     const { items, cartTotal, clearCart } = useCart()
     const { user } = useAuth ()

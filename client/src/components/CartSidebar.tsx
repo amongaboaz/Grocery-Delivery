@@ -4,7 +4,7 @@ import {ArrowRightIcon, MinusIcon, PlusIcon, ShoppingBagIcon, Trash2Icon, XIcon 
 
 const CartSidebar = () => {
   const currency =
-    import.meta.env.VITE_CURRENCY_SYMBOL || "Ksh";
+    import.meta.env.VITE_CURRENCY_SYMBOL || "usd";
 
   const {
     items,

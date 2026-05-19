@@ -9,7 +9,7 @@ interface Props {
 
 const ProductCard = ({ product }: Props) => {
   const currency =
-    import.meta.env.VITE_CURRENCY_SYMBOL || "Ksh";
+    import.meta.env.VITE_CURRENCY_SYMBOL || "usd";
 
   const { addToCart } = useCart()
     

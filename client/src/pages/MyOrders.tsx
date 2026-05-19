@@ -11,7 +11,7 @@ import toast from "react-hot-toast";
 
 const MyOrders = () => {
 
-    const currency = import.meta.env.VITE_CURRENCY_SYMBOL || "Ksh";
+    const currency = import.meta.env.VITE_CURRENCY_SYMBOL || "usd";
 
     const [orders, setOrders] = useState<Order[]>([]);
     const [loading, setLoading] = useState(true);

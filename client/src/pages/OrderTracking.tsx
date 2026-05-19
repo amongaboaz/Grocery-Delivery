@@ -12,7 +12,7 @@ import api from "../config/api";
 const OrderTracking = () => {
   
 
-  const currency = import.meta.env.VITE_CURRENCY_SYMBOL || "Ksh";
+  const currency = import.meta.env.VITE_CURRENCY_SYMBOL || "usd";
 
     const {id} = useParams();
     const navigate = useNavigate()
