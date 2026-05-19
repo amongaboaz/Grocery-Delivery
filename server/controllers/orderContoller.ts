@@ -98,7 +98,7 @@ const session = await stripe.checkout.sessions.create({
   line_items: [
     {
       price_data:{
-        currency:"Ksh",
+        currency:"usd",
         product_data:{
           name:"Payment Groceries"
         },
